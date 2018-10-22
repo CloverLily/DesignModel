@@ -6,7 +6,7 @@ package DesignModel.FactoryMethod.CommonFactory;
 public class FactoryTest {
 
     public static void main(String[] args) {
-        SendFactory factory = new SendFactory();
+        CommonSendFactory factory = new CommonSendFactory();
         Sender sender = factory.produce("sms");
         sender.send();
     }
