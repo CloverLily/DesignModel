@@ -1,4 +1,4 @@
-package DesignModel.FactoryMethod;
+package DesignModel.FactoryMethod.CommonFactory;
 
 public interface Sender {
 

@@ -1,5 +1,8 @@
-package DesignModel.FactoryMethod;
+package DesignModel.FactoryMethod.CommonFactory;
 
+/**
+ * 普通工厂模式
+ */
 public class FactoryTest {
 
     public static void main(String[] args) {

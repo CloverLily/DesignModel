@@ -1,4 +1,4 @@
-package DesignModel.FactoryMethod;
+package DesignModel.FactoryMethod.CommonFactory;
 
 public class MailSender implements Sender {
 
