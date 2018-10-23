@@ -4,13 +4,13 @@ import DesignModel.FactoryMethod.CommonFactory.MailSender;
 import DesignModel.FactoryMethod.CommonFactory.Sender;
 import DesignModel.FactoryMethod.CommonFactory.SmsSender;
 
- class MultiSendFactory {
+public class MultiSendFactory {
 
-     Sender produceMail(){
+    public Sender produceMail() {
         return new MailSender();
     }
 
-     Sender produceSms(){
+    public Sender produceSms() {
         return new SmsSender();
     }
 }

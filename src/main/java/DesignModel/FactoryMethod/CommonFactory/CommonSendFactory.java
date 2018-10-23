@@ -1,8 +1,8 @@
 package DesignModel.FactoryMethod.CommonFactory;
 
-  class CommonSendFactory {
+public class CommonSendFactory {
 
-     Sender produce(String type) {
+    public Sender produce(String type) {
         if ("mail".equals(type)) {
             return new MailSender();
         } else if ("sms".equals(type)) {
