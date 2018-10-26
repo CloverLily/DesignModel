@@ -1,4 +1,4 @@
-package DesignModel.FactoryMethod.CommonFactory;
+package DesignModel._1FactoryMethod.CommonFactory;
 
 /**
  * 普通工厂模式

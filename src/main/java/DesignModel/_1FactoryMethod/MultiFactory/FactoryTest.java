@@ -1,6 +1,6 @@
-package DesignModel.FactoryMethod.MultiFactory;
+package DesignModel._1FactoryMethod.MultiFactory;
 
-import DesignModel.FactoryMethod.CommonFactory.Sender;
+import DesignModel._1FactoryMethod.CommonFactory.Sender;
 
 /**
  * 多个工厂方法模式，

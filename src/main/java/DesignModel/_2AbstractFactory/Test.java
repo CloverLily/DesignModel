@@ -1,9 +1,9 @@
-package DesignModel.AbstractFactory;
+package DesignModel._2AbstractFactory;
 
-import DesignModel.AbstractFactory.Impl.SendMailFactory;
-import DesignModel.AbstractFactory.Impl.SendSmsFactory;
-import DesignModel.AbstractFactory.Interface.Provider;
-import DesignModel.AbstractFactory.Interface.Sender;
+import DesignModel._2AbstractFactory.Impl.SendMailFactory;
+import DesignModel._2AbstractFactory.Impl.SendSmsFactory;
+import DesignModel._2AbstractFactory.Interface.Provider;
+import DesignModel._2AbstractFactory.Interface.Sender;
 
 /**
  *抽象工厂模式

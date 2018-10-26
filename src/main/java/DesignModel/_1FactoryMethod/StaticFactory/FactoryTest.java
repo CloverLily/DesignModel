@@ -1,6 +1,6 @@
-package DesignModel.FactoryMethod.StaticFactory;
+package DesignModel._1FactoryMethod.StaticFactory;
 
-import DesignModel.FactoryMethod.CommonFactory.Sender;
+import DesignModel._1FactoryMethod.CommonFactory.Sender;
 
 /**
  * 静态工厂模式

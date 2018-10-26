@@ -1,4 +1,4 @@
-package DesignModel.Singleton;
+package DesignModel._3Singleton;
 
 import java.util.Vector;
 

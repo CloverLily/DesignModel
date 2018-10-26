@@ -1,6 +1,6 @@
-package DesignModel.AbstractFactory.Impl;
+package DesignModel._2AbstractFactory.Impl;
 
-import DesignModel.AbstractFactory.Interface.Sender;
+import DesignModel._2AbstractFactory.Interface.Sender;
 
 public class SmsSender implements Sender {
     @Override

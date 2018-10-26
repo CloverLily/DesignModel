@@ -1,4 +1,4 @@
-package DesignModel.Singleton;
+package DesignModel._3Singleton;
 
 /**
  * 最原始的单例模式，不能保证线程安全
