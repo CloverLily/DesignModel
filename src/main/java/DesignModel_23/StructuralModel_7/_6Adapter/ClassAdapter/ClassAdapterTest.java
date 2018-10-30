@@ -1,6 +1,6 @@
 package DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter;
 
-public class AdapterTest {
+public class ClassAdapterTest {
     public static void main(String[] args) {
         Targetable targetable = new Adapter();
         //继承自Source类中的方法
