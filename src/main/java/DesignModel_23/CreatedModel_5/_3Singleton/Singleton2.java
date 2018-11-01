@@ -91,3 +91,18 @@ class SingletonTest2 {
         properties = shadow.getProperties();
     }
 }
+
+/**
+ * 推荐的实现方式：利用静态特性
+ *
+ */
+class Singleton3{
+    private  Singleton3(){}
+
+    private static Singleton3 instance= new Singleton3();
+
+    public static Singleton3 getInstance(){
+        return instance;
+    }
+
+}
