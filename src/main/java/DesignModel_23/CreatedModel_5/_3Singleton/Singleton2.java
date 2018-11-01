@@ -7,6 +7,8 @@ import java.util.Vector;
  * 这样当我们第一次调用getInstance的时候，JVM能够帮我们保证instance只被创建一次，并且会保证把赋值给instance的内存初始化完毕，
  * 这样我们就不用担心由创建对象和赋值操作命令分开进行而产生的问题。同时该方法也只会在第一次调用的时候使用互斥机制，这样就解决了低性能问题。
  * 这样我们暂时总结一个完美的单例模式：
+ *
+ * 目前最推荐的实现方式：（按需创建）
  */
 public class Singleton2 {
     /*私有构造方法，防止被实例化*/
@@ -33,67 +35,8 @@ public class Singleton2 {
 }
 
 /**
- * 其实说它完美，也不一定，如果在构造函数中抛出异常，
- * 实例将永远得不到创建，也会出错。所以说，十分完美的东西是没有的，我们只能根据实际情况，选择最适合自己应用场景的实现方法。也有人这样实现：
- * 因为我们只需要在创建类的时候进行同步，所以只要将创建和getInstance()分开，单独为创建加synchronized关键字，也是可以的：
- */
-class SingletonTest {
-    private static SingletonTest instance = null;
-
-    private SingletonTest() {
-
-    }
-
-    private static synchronized void syncInit() {
-        if (instance == null) {
-            instance = new SingletonTest();
-        }
-    }
-
-    public static SingletonTest getInstance() {
-        if (instance == null) {
-            syncInit();
-        }
-        return instance;
-    }
-}
-
-//补充：采用"影子实例"的办法为单例对象的属性同步更新
-class SingletonTest2 {
-    private static SingletonTest2 instance = null;
-    //属性列表
-    private Vector properties = null;
-
-    public Vector getProperties() {
-        return properties;
-    }
-
-    private SingletonTest2() {
-
-    }
-
-    private static synchronized void syncInit() {
-        if (instance == null) {
-            instance = new SingletonTest2();
-        }
-    }
-
-    public static SingletonTest2 getInstance() {
-        if (instance == null) {
-            syncInit();
-        }
-        return instance;
-    }
-
-    //同步更新属性
-    public void updateProperties() {
-        SingletonTest2 shadow = new SingletonTest2();
-        properties = shadow.getProperties();
-    }
-}
-
-/**
  * 推荐的实现方式：利用静态特性
+ * 但是会过早地创建实例，从而降低内存的使用效率。
  *
  */
 class Singleton3{
@@ -106,3 +49,65 @@ class Singleton3{
     }
 
 }
+
+/**
+ * 其实说Singleton2完美，也不一定，如果在构造函数中抛出异常，
+ * 实例将永远得不到创建，也会出错。所以说，十分完美的东西是没有的，我们只能根据实际情况，选择最适合自己应用场景的实现方法。也有人这样实现：
+ * 因为我们只需要在创建类的时候进行同步，所以只要将创建和getInstance()分开，单独为创建加synchronized关键字，也是可以的：
+ */
+class Singleton4 {
+    private static Singleton4 instance = null;
+
+    private Singleton4() {
+
+    }
+
+    private static synchronized void syncInit() {
+        if (instance == null) {
+            instance = new Singleton4();
+        }
+    }
+
+    public static Singleton4 getInstance() {
+        if (instance == null) {
+            syncInit();
+        }
+        return instance;
+    }
+}
+
+//补充：采用"影子实例"的办法为单例对象的属性同步更新
+class Singleton4_2 {
+    private static Singleton4_2 instance = null;
+    //属性列表
+    private Vector properties = null;
+
+    public Vector getProperties() {
+        return properties;
+    }
+
+    private Singleton4_2() {
+
+    }
+
+    private static synchronized void syncInit() {
+        if (instance == null) {
+            instance = new Singleton4_2();
+        }
+    }
+
+    public static Singleton4_2 getInstance() {
+        if (instance == null) {
+            syncInit();
+        }
+        return instance;
+    }
+
+    //同步更新属性
+    public void updateProperties() {
+        Singleton4_2 shadow = new Singleton4_2();
+        properties = shadow.getProperties();
+    }
+}
+
+
