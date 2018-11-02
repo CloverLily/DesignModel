@@ -12,9 +12,7 @@ import java.util.Vector;
  */
 public class Singleton2 {
     /*私有构造方法，防止被实例化*/
-    private Singleton2() {
-
-    }
+    private Singleton2() {}
 
     //使用内部类来保护单例模式
     private static class SingletonFactory {
@@ -30,9 +28,8 @@ public class Singleton2 {
     public Object readResolve() {
         return getInstance();
     }
-
-
 }
+
 
 /**
  * 推荐的实现方式：利用静态特性
