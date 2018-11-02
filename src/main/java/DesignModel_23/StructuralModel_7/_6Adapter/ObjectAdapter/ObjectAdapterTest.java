@@ -1,7 +1,7 @@
 package DesignModel_23.StructuralModel_7._6Adapter.ObjectAdapter;
 
-import DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.Source;
-import DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.Targetable;
+import DesignModel_23.StructuralModel_7._6Adapter.Source6;
+import DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.Interface.Targetable;
 
 /**
  * 对象的适配器模式
@@ -12,8 +12,8 @@ import DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.Targetable;
 public class ObjectAdapterTest {
 
     public static void main(String[] args) {
-        Source source = new Source();
-        Targetable targetable = new Wrapper(source);
+        Source6 source6_1 = new Source6();
+        Targetable targetable = new Wrapper(source6_1);
         targetable.method1();
         targetable.method2();
     }

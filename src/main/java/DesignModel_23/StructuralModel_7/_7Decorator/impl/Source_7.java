@@ -1,11 +1,11 @@
 package DesignModel_23.StructuralModel_7._7Decorator.impl;
 
-import DesignModel_23.StructuralModel_7._7Decorator.Interface.Sourceable;
+import DesignModel_23.StructuralModel_7._7Decorator.Interface.Sourceable_7;
 
 /**
  * 被装饰的类
  */
-public class Source implements Sourceable {
+public class Source_7 implements Sourceable_7 {
     @Override
     public void method() {
         System.out.println("The original method~");

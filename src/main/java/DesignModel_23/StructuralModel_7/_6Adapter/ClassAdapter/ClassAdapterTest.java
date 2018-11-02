@@ -1,5 +1,8 @@
 package DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter;
 
+import DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.Interface.Targetable;
+import DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.impl.Adapter;
+
 /**
  * 类的适配器模式
  * 适配器类继承一个类，实现一个接口

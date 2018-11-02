@@ -1,15 +1,15 @@
 package DesignModel_23.StructuralModel_7._7Decorator.impl;
 
-import DesignModel_23.StructuralModel_7._7Decorator.Interface.Sourceable;
+import DesignModel_23.StructuralModel_7._7Decorator.Interface.Sourceable_7;
 
 /**
  * 装饰Source类的类，与Source实现同一个接口，然后重写Source中的方法实现
  */
-public class Decorator implements Sourceable {
+public class Decorator implements Sourceable_7 {
 
-    private Sourceable source;
+    private Sourceable_7 source;
 
-    public Decorator(Sourceable source) {
+    public Decorator(Sourceable_7 source) {
         super();
         this.source = source;
     }
@@ -17,7 +17,7 @@ public class Decorator implements Sourceable {
     @Override
     public void method() {
         System.out.println("Before decorator~");
-        //此处调用实现了Sourceable接口的Source类重写的method()方法,可由此代码保证：Sourceable source= new Source();
+        //此处调用实现了Sourceable接口的Source类重写的method()方法,可由此代码保证：Sourceable_8 source= new Source_8();
         source.method();
         System.out.println("After decorator~");
     }
