@@ -41,7 +41,7 @@ public class ConnectionPool {
 
 
     /*返回连接到连接池*/
-    public synchronized void release() {
+    public synchronized void release(Connection conn) {
         pool.add(conn);
     }
 
