@@ -3,10 +3,10 @@ package DesignModel_23.BehavioralModel_11._14TemplateMethod;
 import DesignModel_23.BehavioralModel_11._13Strategy.AbstractCalculator;
 
 /**
- * 在AbstractCalculator类中定义一个主方法calculate，
+ * 在AbstractCalculator14类中定义一个主方法calculate，
  * calculate()调用spilt()等，
- * Plus和Minus分别继承AbstractCalculator类，
- * 通过对AbstractCalculator的调用实现对子类的调用。
+ * Plus14和Minus14分别继承AbstractCalculator14类，
+ * 通过对AbstractCalculator14的调用实现对子类的调用。
  *
  * 与策略模式各有特色
  */
