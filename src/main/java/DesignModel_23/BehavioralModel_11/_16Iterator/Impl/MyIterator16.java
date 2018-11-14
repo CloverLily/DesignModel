@@ -17,8 +17,6 @@ public class MyIterator16 implements Iterator16 {
 
     /**
      * 返回集合中上一个元素
-     *
-     * @return
      */
     @Override
     public Object previous() {
@@ -30,8 +28,6 @@ public class MyIterator16 implements Iterator16 {
 
     /**
      * 返回集合中下一个元素
-     *
-     * @return
      */
     @Override
     public Object next() {
@@ -43,8 +39,6 @@ public class MyIterator16 implements Iterator16 {
 
     /**
      * 判断集合中是否存在下一个元素
-     *
-     * @return
      */
     @Override
     public boolean hasNext() {
@@ -53,8 +47,6 @@ public class MyIterator16 implements Iterator16 {
 
     /**
      * 获得集合中第一个元素
-     *
-     * @return
      */
     @Override
     public Object first() {

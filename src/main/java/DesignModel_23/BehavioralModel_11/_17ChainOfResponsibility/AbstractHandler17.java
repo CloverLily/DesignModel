@@ -1,7 +1,6 @@
 package DesignModel_23.BehavioralModel_11._17ChainOfResponsibility;
 
 import DesignModel_23.BehavioralModel_11._17ChainOfResponsibility.Interface.Handler17;
-import jdk.internal.org.objectweb.asm.Handle;
 
 /**
  * Abstracthandler类提供了get和set方法，方便MyHandler类设置和修改引用对象，

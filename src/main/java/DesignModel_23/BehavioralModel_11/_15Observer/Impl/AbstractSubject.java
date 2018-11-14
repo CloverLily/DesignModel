@@ -11,16 +11,27 @@ public abstract class AbstractSubject implements Subject {
     //观察者集合
     private Vector<Observer> vector = new Vector<>();
 
+    /**
+     * 添加观察者
+     * @param observer 被添加观察者
+     */
     @Override
     public void add(Observer observer) {
         vector.add(observer);
     }
 
+    /**
+     * 移除观察者
+     * @param observer 被移除观察者
+     */
     @Override
     public void del(Observer observer) {
         vector.remove(observer);
     }
 
+    /**
+     * 更新提醒（提醒所有观察者）
+     */
     @Override
     public void notifyObservers() {
         Enumeration<Observer> enumo = vector.elements();
