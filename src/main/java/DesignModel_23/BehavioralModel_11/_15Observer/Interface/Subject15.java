@@ -3,7 +3,7 @@ package DesignModel_23.BehavioralModel_11._15Observer.Interface;
 /**
  * Subject接口（被订阅对象）
  */
-public interface Subject {
+public interface Subject15 {
     /*增加观察者*/
     public void add(Observer observer);
 

@@ -1,12 +1,12 @@
 package DesignModel_23.BehavioralModel_11._15Observer.Impl;
 
 import DesignModel_23.BehavioralModel_11._15Observer.Interface.Observer;
-import DesignModel_23.BehavioralModel_11._15Observer.Interface.Subject;
+import DesignModel_23.BehavioralModel_11._15Observer.Interface.Subject15;
 
 import java.util.Enumeration;
 import java.util.Vector;
 
-public abstract class AbstractSubject implements Subject {
+public abstract class AbstractSubject implements Subject15 {
 
     //观察者集合
     private Vector<Observer> vector = new Vector<>();

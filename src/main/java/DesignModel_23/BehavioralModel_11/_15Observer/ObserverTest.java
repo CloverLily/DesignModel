@@ -1,9 +1,9 @@
 package DesignModel_23.BehavioralModel_11._15Observer;
 
-import DesignModel_23.BehavioralModel_11._15Observer.Impl.MySubject;
+import DesignModel_23.BehavioralModel_11._15Observer.Impl.MySubject15;
 import DesignModel_23.BehavioralModel_11._15Observer.Impl.Observer1;
 import DesignModel_23.BehavioralModel_11._15Observer.Impl.Observer2;
-import DesignModel_23.BehavioralModel_11._15Observer.Interface.Subject;
+import DesignModel_23.BehavioralModel_11._15Observer.Interface.Subject15;
 
 /**
  * MySubject类就是我们的主对象，即被订阅对象
@@ -17,13 +17,13 @@ public class ObserverTest {
 
     public static void main(String[] args) {
         //创建被观察者实例
-        Subject subject = new MySubject();
+        Subject15 subject15 = new MySubject15();
         //添加观察者
-        subject.add(new Observer1());
-        subject.add(new Observer1());
-        subject.add(new Observer2());
+        subject15.add(new Observer1());
+        subject15.add(new Observer1());
+        subject15.add(new Observer2());
 
         //观察者更新
-        subject.operat();
+        subject15.operat();
     }
 }
