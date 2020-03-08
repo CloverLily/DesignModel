@@ -1,4 +1,4 @@
-package DesignModel_23.CreatedModel_5._1FactoryMethod.CommonFactory;
+package DesignModel_23.CreatedModel_5._1FactoryMethod.domain;
 
 /**
  * 模拟发送器接口

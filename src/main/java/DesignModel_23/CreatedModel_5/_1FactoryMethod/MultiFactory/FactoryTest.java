@@ -1,6 +1,6 @@
 package DesignModel_23.CreatedModel_5._1FactoryMethod.MultiFactory;
 
-import DesignModel_23.CreatedModel_5._1FactoryMethod.CommonFactory.Sender;
+import DesignModel_23.CreatedModel_5._1FactoryMethod.domain.Sender;
 
 /**
  * 多个工厂方法模式，

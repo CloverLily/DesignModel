@@ -1,5 +1,9 @@
 package DesignModel_23.CreatedModel_5._1FactoryMethod.CommonFactory;
 
+import DesignModel_23.CreatedModel_5._1FactoryMethod.domain.MailSender;
+import DesignModel_23.CreatedModel_5._1FactoryMethod.domain.Sender;
+import DesignModel_23.CreatedModel_5._1FactoryMethod.domain.SmsSender;
+
 /**
  * 模拟发送器工厂
  *
