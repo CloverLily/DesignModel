@@ -1,9 +1,9 @@
 package DesignModel_23.CreatedModel_5._2AbstractFactory;
 
-import DesignModel_23.CreatedModel_5._2AbstractFactory.Impl.SendSmsFactory;
-import DesignModel_23.CreatedModel_5._2AbstractFactory.Impl.SendMailFactory;
-import DesignModel_23.CreatedModel_5._2AbstractFactory.Interface.Provider;
-import DesignModel_23.CreatedModel_5._2AbstractFactory.Interface.Sender;
+import DesignModel_23.CreatedModel_5._2AbstractFactory.provider.impl.SendSmsFactory;
+import DesignModel_23.CreatedModel_5._2AbstractFactory.provider.impl.SendMailFactory;
+import DesignModel_23.CreatedModel_5._2AbstractFactory.provider.Provider;
+import DesignModel_23.CreatedModel_5._2AbstractFactory.sender.Sender;
 
 /**
  *抽象工厂模式
