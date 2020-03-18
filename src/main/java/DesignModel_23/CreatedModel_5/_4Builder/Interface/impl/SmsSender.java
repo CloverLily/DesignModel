@@ -1,4 +1,4 @@
-package DesignModel_23.CreatedModel_5._4Builder.Impl;
+package DesignModel_23.CreatedModel_5._4Builder.Interface.impl;
 
 import DesignModel_23.CreatedModel_5._4Builder.Interface.Sender;
 

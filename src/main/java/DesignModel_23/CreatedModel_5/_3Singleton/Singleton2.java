@@ -10,7 +10,7 @@ import java.util.Vector;
  *
  * 目前最推荐的实现方式：（按需创建）
  */
-public class Singleton2 {
+ public class Singleton2 {
     /*私有构造方法，防止被实例化*/
     private Singleton2() {}
 

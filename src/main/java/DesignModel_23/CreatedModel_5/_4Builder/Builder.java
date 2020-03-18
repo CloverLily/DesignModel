@@ -1,7 +1,7 @@
 package DesignModel_23.CreatedModel_5._4Builder;
 
-import DesignModel_23.CreatedModel_5._4Builder.Impl.MailSender;
-import DesignModel_23.CreatedModel_5._4Builder.Impl.SmsSender;
+import DesignModel_23.CreatedModel_5._4Builder.Interface.impl.MailSender;
+import DesignModel_23.CreatedModel_5._4Builder.Interface.impl.SmsSender;
 import DesignModel_23.CreatedModel_5._4Builder.Interface.Sender;
 
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class Builder {
     }
 
     public void produceSmsSender(int count){
-        for (int i = 0; i < count; i++) {
+        for (int j = 0; j < count; j++) {
             list.add(new SmsSender());
         }
     }
