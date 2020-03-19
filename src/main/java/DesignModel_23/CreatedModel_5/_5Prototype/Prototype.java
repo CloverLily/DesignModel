@@ -31,8 +31,7 @@ public class Prototype implements Cloneable, Serializable{
     //浅复制
     //将一个对象复制后，基本数据类型的变量都会重新创建，而引用类型，指向的还是原对象所指向的。
     public Object clone() throws CloneNotSupportedException{
-        Prototype proto =(Prototype) super.clone();
-        return  proto;
+        return (Prototype) super.clone();
     }
 
     //深复制
@@ -70,5 +69,11 @@ public class Prototype implements Cloneable, Serializable{
 
 class SerializableObject implements Serializable{
     private static final long serialVersionUID = 1L;
+    private String desc;
+
+    public void setDesc(String desc){
+        this.desc = desc;
+    }
+
 }
 
