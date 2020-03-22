@@ -1,4 +1,4 @@
-package DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.Interface;
+package DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter;
 
 public interface Targetable {
     //与Source类中的方法相同

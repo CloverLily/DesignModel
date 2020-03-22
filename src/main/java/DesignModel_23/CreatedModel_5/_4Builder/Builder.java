@@ -9,17 +9,19 @@ import java.util.List;
 
 public class Builder {
 
-    private List<Sender> list=new ArrayList<>();
-
-    public void produceMailSender(int count){
+    public List<Sender> produceMailSender(int count) {
+        List<Sender> mailSenderList = new ArrayList<>();
         for (int i = 0; i < count; i++) {
-            list.add(new MailSender());
+            mailSenderList.add(new MailSender());
         }
+        return mailSenderList;
     }
 
-    public void produceSmsSender(int count){
+    public List<Sender> produceSmsSender(int count) {
+        List<Sender> smsSenderList = new ArrayList<>();
         for (int j = 0; j < count; j++) {
-            list.add(new SmsSender());
+            smsSenderList.add(new SmsSender());
         }
+        return smsSenderList;
     }
 }

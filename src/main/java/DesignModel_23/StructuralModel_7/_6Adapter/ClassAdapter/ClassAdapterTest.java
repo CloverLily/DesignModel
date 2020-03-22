@@ -1,6 +1,5 @@
 package DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter;
 
-import DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.Interface.Targetable;
 import DesignModel_23.StructuralModel_7._6Adapter.ClassAdapter.impl.Adapter;
 
 /**

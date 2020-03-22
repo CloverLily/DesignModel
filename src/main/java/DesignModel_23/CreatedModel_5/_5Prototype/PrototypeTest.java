@@ -6,7 +6,8 @@ public class PrototypeTest {
     public static void main(String[] args){
         try{
             Prototype prototype = new Prototype();
-            prototype.setString("prototype");
+            String string = "prototype";
+            prototype.setString(string);
             SerializableObject serializableObject = new SerializableObject();
             serializableObject.setDesc("serializableObject");
             prototype.setObj(serializableObject);
@@ -27,7 +28,8 @@ public class PrototypeTest {
             SerializableObject serializableObject2 = new SerializableObject();
             serializableObject2.setDesc("serializableObject2");
             prototype.setObj(serializableObject2);
-            prototype.setString("prototype2");
+            string = "prototype2";
+            prototype.setString(string);
 
             System.out.println("clone-jsonString:"+prototype1.toJsonString());
             System.out.println("clone-string:"+prototype1.toString());
