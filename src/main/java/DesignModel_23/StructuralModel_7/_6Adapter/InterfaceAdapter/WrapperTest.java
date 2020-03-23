@@ -1,6 +1,7 @@
 package DesignModel_23.StructuralModel_7._6Adapter.InterfaceAdapter;
 
-import DesignModel_23.StructuralModel_7._6Adapter.InterfaceAdapter.Interface.Sourceable;
+import DesignModel_23.StructuralModel_7._6Adapter.InterfaceAdapter.impl.SourceSub1;
+import DesignModel_23.StructuralModel_7._6Adapter.InterfaceAdapter.impl.SourceSub2;
 
 /**
  * 接口适配器模式测试：

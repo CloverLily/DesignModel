@@ -14,6 +14,7 @@ public class ClassAdapterTest {
         Targetable targetable = new Adapter();
         //继承自Source类中的方法
         targetable.method1();
+
         //适配后的方法
         targetable.method2();
     }
