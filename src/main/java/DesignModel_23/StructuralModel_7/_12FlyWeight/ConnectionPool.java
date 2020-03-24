@@ -19,7 +19,7 @@ public class ConnectionPool {
     private String driverClassName = "com.mysql.jdbc.Driver";
 
     private int poolSize = 100;
-    private static ConnectionPool instance = null;
+    private static ConnectionPool instance;
     Connection conn = null;
 
     /*构造方法，做一些初始化工作*/

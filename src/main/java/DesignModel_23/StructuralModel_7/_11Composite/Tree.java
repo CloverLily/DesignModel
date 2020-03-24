@@ -2,10 +2,10 @@ package DesignModel_23.StructuralModel_7._11Composite;
 
 public class Tree {
 
-    TreeNode root = null;
+    TreeNode root;
 
-    public Tree(String name){
-        root = new TreeNode(name);
+    public Tree(String name) {
+        this.root = new TreeNode(name);
     }
 
     public static void main(String[] args) {
@@ -16,5 +16,18 @@ public class Tree {
         nodeB.add(nodeC);
         tree.root.add(nodeB);
         System.out.println("Build the tree finished~");//A->B->C
+
+        TreeNode node = tree.root;
+        while (node != null) {
+            System.out.println(node.getName());
+            if (node.getChildren() != null) {
+                if (node.getChildren().hasMoreElements()) {
+                    node = node.getChildren().nextElement();
+                } else {
+                    node = null;
+                }
+
+            }
+        }
     }
 }

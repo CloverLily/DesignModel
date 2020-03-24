@@ -1,6 +1,5 @@
 package DesignModel_23.StructuralModel_7._10Bridge;
 
-import DesignModel_23.StructuralModel_7._10Bridge.Interface.Sourceable10;
 import DesignModel_23.StructuralModel_7._10Bridge.impl.SourceSub1;
 import DesignModel_23.StructuralModel_7._10Bridge.impl.SourceSub2;
 
@@ -19,7 +18,7 @@ public class BridgeTest {
         bridge.method();
 
         //调用第二个对象
-        Sourceable10 source2=new SourceSub2();
+        Sourceable10 source2 = new SourceSub2();
         bridge.setSource(source2);
         bridge.method();
     }

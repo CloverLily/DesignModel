@@ -1,7 +1,5 @@
 package DesignModel_23.StructuralModel_7._10Bridge;
 
-import DesignModel_23.StructuralModel_7._10Bridge.Interface.Sourceable10;
-
 /**
  * 定义一个桥，持有Sourceable10的一个实例
  */
