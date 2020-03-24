@@ -1,6 +1,5 @@
 package DesignModel_23.StructuralModel_7._7Decorator;
 
-import DesignModel_23.StructuralModel_7._7Decorator.Interface.Sourceable_7;
 import DesignModel_23.StructuralModel_7._7Decorator.impl.Decorator;
 import DesignModel_23.StructuralModel_7._7Decorator.impl.Source_7;
 

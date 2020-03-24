@@ -1,6 +1,6 @@
 package DesignModel_23.StructuralModel_7._7Decorator.impl;
 
-import DesignModel_23.StructuralModel_7._7Decorator.Interface.Sourceable_7;
+import DesignModel_23.StructuralModel_7._7Decorator.Sourceable_7;
 
 /**
  * 被装饰的类
