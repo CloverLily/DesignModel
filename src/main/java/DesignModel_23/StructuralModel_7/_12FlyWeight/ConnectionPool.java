@@ -31,16 +31,13 @@ public class ConnectionPool {
                 Class.forName(driverClassName);
                 conn = DriverManager.getConnection(url, username, password);
                 pool.add(conn);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (SQLException e) {
+            } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
             }
         }
     }
 
-
-    /*返回连接到连接池*/
+    /*释放连接到连接池*/
     public synchronized void release(Connection conn) {
         pool.add(conn);
     }

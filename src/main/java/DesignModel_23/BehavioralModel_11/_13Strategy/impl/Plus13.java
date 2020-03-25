@@ -1,7 +1,7 @@
 package DesignModel_23.BehavioralModel_11._13Strategy.impl;
 
 import DesignModel_23.BehavioralModel_11._13Strategy.AbstractCalculator;
-import DesignModel_23.BehavioralModel_11._13Strategy.Interface.ICalculator;
+import DesignModel_23.BehavioralModel_11._13Strategy.ICalculator;
 
 /**
  * 加法实现类
