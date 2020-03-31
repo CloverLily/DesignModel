@@ -3,7 +3,6 @@ package DesignModel_23.BehavioralModel_11._15Observer;
 import DesignModel_23.BehavioralModel_11._15Observer.Impl.MySubject15;
 import DesignModel_23.BehavioralModel_11._15Observer.Impl.Observer1;
 import DesignModel_23.BehavioralModel_11._15Observer.Impl.Observer2;
-import DesignModel_23.BehavioralModel_11._15Observer.Interface.Subject15;
 
 /**
  * MySubject类就是我们的主对象，即被订阅对象

@@ -1,7 +1,5 @@
 package DesignModel_23.BehavioralModel_11._14TemplateMethod;
 
-import DesignModel_23.BehavioralModel_11._13Strategy.AbstractCalculator;
-
 /**
  * 在AbstractCalculator14类中定义一个主方法calculate，
  * calculate()调用spilt()等，

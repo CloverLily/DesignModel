@@ -1,4 +1,4 @@
-package DesignModel_23.BehavioralModel_11._15Observer.Interface;
+package DesignModel_23.BehavioralModel_11._15Observer;
 
 /**
  * 观察者接口（订阅对象）

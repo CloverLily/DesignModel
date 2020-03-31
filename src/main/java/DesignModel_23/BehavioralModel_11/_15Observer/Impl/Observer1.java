@@ -1,6 +1,6 @@
 package DesignModel_23.BehavioralModel_11._15Observer.Impl;
 
-import DesignModel_23.BehavioralModel_11._15Observer.Interface.Observer;
+import DesignModel_23.BehavioralModel_11._15Observer.Observer;
 
 //观察者1
 public class Observer1 implements Observer {

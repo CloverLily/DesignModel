@@ -1,7 +1,7 @@
 package DesignModel_23.BehavioralModel_11._15Observer.Impl;
 
-import DesignModel_23.BehavioralModel_11._15Observer.Interface.Observer;
-import DesignModel_23.BehavioralModel_11._15Observer.Interface.Subject15;
+import DesignModel_23.BehavioralModel_11._15Observer.Observer;
+import DesignModel_23.BehavioralModel_11._15Observer.Subject15;
 
 import java.util.Enumeration;
 import java.util.Vector;
